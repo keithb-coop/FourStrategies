@@ -3,13 +3,13 @@
 I've been thinking some more about what the techniques for reading complex code in _The Programmer's Brain_ might tell us about writing complex code. Or even simple code.
 
 
-Consider the problem of summing a sequence of values (or concatenating a sequence of strings, or aggregating anything else in the monoid ⟨S,+:S→S→S,0:S⟩ it's all the same pattern). There are four strategies:
+Consider the problem of summing a sequence of values (or concatenating a sequence of strings, or aggregating anything else in the monoid `⟨S,+:S→S→S,0:S⟩` it's all the same pattern). There are four strategies:
 
 	
-|	                         | :**iterative process**:	| :**recursive process**: |
-|                          |          :----:          |         :----:          |
-| **iterative	defintion**: |          :iPiD:	        |         :rPiD:          |
-| **recursive defintion**: |	        :iPrD:	        |         :rPrD:          |
+|	                    | **iterative process** | **recursive process** |
+|          ----:            |          :----:       |        :----:         |
+| **iterative	defintion** |          iPiD	    |         rPiD          |
+| **recursive defintion**   |	       iPrD	    |         rPrD          |
 
 Here I take "recursive" to mean _does not name partial sums_, where iterative does, and "iterative" to mean _explicitly loops_ where recursive doesn't. 
 
